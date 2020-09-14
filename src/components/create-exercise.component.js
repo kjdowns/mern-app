@@ -14,6 +14,12 @@ export default class CreateExercises extends Component {
         }
     }
 
+    onChangeUsername(e){
+        this.setState({
+            username: e.target.value
+        })
+    }
+
     render() {
         return (
             <div>
