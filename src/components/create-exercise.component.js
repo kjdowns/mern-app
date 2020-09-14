@@ -20,6 +20,18 @@ export default class CreateExercises extends Component {
         })
     }
 
+    onChangeDescription(e){
+        this.setState({
+            description: e.target.value
+        })
+    }
+
+    onChangeDate(e){
+        this.setState({
+            date: e.target.value
+        })
+    }
+
     render() {
         return (
             <div>
