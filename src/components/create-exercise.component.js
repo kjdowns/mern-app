@@ -38,6 +38,21 @@ export default class CreateExercises extends Component {
         })
     }
 
+    onSubmit(e){
+        e.preventDefault();
+
+        const exercise = {
+            username: this.state.username,
+            description: this.state.description,
+            duration: this.state.duration,
+            date: this.state.date
+        }
+
+        console.log(excercise);
+
+        window.location ='/'
+    }
+
     render() {
         return (
             <div>
