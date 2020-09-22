@@ -19,6 +19,13 @@ export default class CreateExercises extends Component {
             users: []
         }
     }
+    
+    componentDidMount(){
+        this.setState({
+            users: ['test user'],
+            username: 'test user'
+        })
+    }
 
     onChangeUsername(e){
         this.setState({
