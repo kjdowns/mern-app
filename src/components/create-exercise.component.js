@@ -69,7 +69,32 @@ export default class CreateExercises extends Component {
     render() {
         return (
             <div>
-                <p>You are on the Create Exercises component!</p>
+                <h3>Create New Exercise Log</h3>
+                <form>
+                    <div className="form-group">
+                        <label>Username: </label>
+                        <select>
+
+                        </select>
+                    </div>
+                    <div className="form-group">
+                        <label>Description: </label>
+                        <input type="text" className="form-control" />
+                    </div>
+                    <div className="form-group">
+                        <label>Duration (in minutes): </label>
+                        <input type="text" className="form-control" />
+                    </div>
+                    <div className="form-group">
+                        <label>Date: </label>
+                        <div>
+                            <DatePicker selected={this.state.date} />
+                        </div>
+                    </div>
+                    <div className="form-group">
+                        <input type="submit" value="Create Exercise Log" className="btn btn-primary" />
+                    </div>
+                </form>
             </div>
         )
     }
