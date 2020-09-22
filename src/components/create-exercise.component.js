@@ -5,6 +5,12 @@ export default class CreateExercises extends Component {
     constructor(){
         super();
 
+        this.onChangeUsername = this.onChangeUsername.bind(this);
+        this.onChangeDescription = this.onChangeDescription.bind(this);
+        this.onChangeDuration = this.onChangeDuration.bind(this);
+        this.onChangeDate = this.onChangeDate.bind(this);
+        this.onSubmit = this.onSubmit.bind(this);
+
         this.state = {
             username: '',
             description: '',
@@ -48,7 +54,7 @@ export default class CreateExercises extends Component {
             date: this.state.date
         }
 
-        console.log(excercise);
+        console.log(exercise);
 
         window.location ='/'
     }
