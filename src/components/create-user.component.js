@@ -36,7 +36,16 @@ export default class CreateUser extends Component {
     render() {
         return (
             <div>
-                <p>You are on the Create User component!</p>
+                <h3>Create New User</h3>
+                <form>
+                    <div>
+                        <label>Username: </label>
+                        <input type="text" />
+                    </div>
+                    <div>
+                        <input type="submit" value="Create User"/>
+                    </div>
+                </form>
             </div>
         )
     }
