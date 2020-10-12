@@ -27,6 +27,12 @@ export default class ExercisesList extends Component {
         this.setState({exercises: this.state.exercises.filter(el => el._id !== id)});
     }
 
+    exercisesList(){
+        return this.state.exercises.map(currentExercise => {
+            return <Exercise exercise={currentExercise} deleteExercise={this.deleteExercise} key={currentExercise._id}/>
+        })
+    }
+
     render() {
         return (
             <div>
