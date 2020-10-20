@@ -45,6 +45,12 @@ export default class EditExercises extends Component {
             })
     }
 
+    onChangeUsername(e) {
+        this.setState({
+            username: e.target.value
+        });
+    }
+
     render() {
         return (
             <div>
