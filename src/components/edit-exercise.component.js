@@ -51,6 +51,12 @@ export default class EditExercises extends Component {
         });
     }
 
+    onChangeDescription(e) {
+        this.setState({
+            description: e.target.value
+        });
+    }
+
     render() {
         return (
             <div>
